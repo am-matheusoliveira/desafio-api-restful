@@ -97,20 +97,18 @@ Para obter o Token JWT navegue ate:<br>
 Servidor Web Laravel: `http://localhost:8000/api/documentation`<br>
 Seu Servidor Web: `http://localhost/application-name/api/documentation`<br>
 
-Excute a API: `/api/user/login`, passando um Json com Usuário e Senha:<br>
+Excute a API: `/api/user/login`, passando um Json com Email e Senha:<br>
 ```
 {
-  "email": "john.doe@example.com",
+  "email": "username@email.com",
   "password": "password"
 }
 ```
 Após fazer login, você receberá um token JWT que deve ser usado nas solicitações subsequentes.
 
 ### Incluir Token JWT nas Solicitações
-Inclua o token JWT no cabeçalho `Authorization` das suas requisições:
-```
-Authorization: Bearer seu_token_jwt
-```
+Clique no ícone de cadeado (Authorize) no canto superior direito do Swagger UI e inclua o token JWT.
+
 ### Testes de Integração
 O projeto inclui testes de integração para os endpoints de `api/v1/buscar-vagas` e `api/v1/buscar-vaga/{id}`. Para executar os testes, use os seguintes comandos:
 ```
