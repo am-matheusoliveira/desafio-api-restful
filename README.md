@@ -101,9 +101,15 @@ Inclua o token JWT no cabeçalho `Authorization` das suas requisições:
 Authorization: Bearer seu_token_jwt
 ```
 ### Testes de Integração
-O projeto inclui testes de integração para os endpoints de `api/v1/buscar-vagas` e `api/v1/buscar-vaga/{id}`. Para executar os testes, use o seguinte comando:
+O projeto inclui testes de integração para os endpoints de `api/v1/buscar-vagas` e `api/v1/buscar-vaga/{id}`. Para executar os testes, use os seguintes comandos:
 ```
-php artisan test
+php artisan test --filter=VagasEmpregoTest::test_list_all_vagas
+
+php artisan test --filter=VagasEmpregoTest::test_show_vaga_by_id
+
+php artisan test --filter=VagasEmpregoTest::test_vaga_not_exists
+
+php artisan test --filter=VagasEmpregoTest
 ```
 
 ### Documentação da API
