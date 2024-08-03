@@ -93,6 +93,11 @@ A API usa JWT para autenticar as solicitações dos usuários. Para acessar os e
 
 ### Obter Token JWT
 
+Para obter o Token JWT navegue ate:<br>
+Servidor Web Laravel: `http://localhost:8000/api/documentation`<br>
+Seu Servidor Web: `http://localhost/application-name/api/documentation`
+
+
 Após fazer login, você receberá um token JWT que deve ser usado nas solicitações subsequentes.
 
 ### Incluir Token JWT nas Solicitações
