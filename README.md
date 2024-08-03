@@ -41,17 +41,22 @@ JWT_SECRET=sua_chave_secreta
 ```
 php artisan key:generate
 ```
-### 5. Criar o Banco de Dados - Sistema
+### 5. Gerar o JWT_SECRET
+Para gerar o `JWT_SECRET`, execute o seguinte comando:
+```
+php artisan jwt:secret
+```
+### 6. Criar o Banco de Dados - Sistema
 Execute o script SQL que esta na pasta `database-app/script-database.sql` para criar o banco de dados e as tabelas necessárias, caso esteja no Linux:
 ```
 mysql -u seu_usuario -p sua_senha seu_banco_de_dados < database-app/script-database.sql
 ```
 Para realizar esta tarefa no Windows abra o seu SGBD do MySQL e execute o script SQL mencionado acima.
-### 6. Migrar o Banco de Dados - Tabelas do Laravel
+### 7. Migrar o Banco de Dados - Tabelas do Laravel
 ```
 php artisan migrate
 ```
-### 7. Executar o Servidor de Desenvolvimento
+### 8. Executar o Servidor de Desenvolvimento
 Caso não esteja usando um Servidor Web como o Apache ou Nginx, execute o comando:
 ```
 php artisan serve
