@@ -52,6 +52,7 @@ Para realizar esta tarefa no Windows abra o seu SGBD do MySQL e execute o script
 php artisan serve
 ```
 ### 7. Executar o Servidor de Desenvolvimento
+Caso não esteja usando um Servidor Web como o Apache ou Nginx, execute o comando:
 ```
 php artisan serve
 ```
