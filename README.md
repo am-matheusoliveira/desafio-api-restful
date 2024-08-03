@@ -131,13 +131,13 @@ Seu Servidor Web: `http://localhost/application-name/api/documentation`
 
 ### Conclusão
 
-Este projeto demonstra as habilidades no desenvolvimento de API RESTful com PHP e Laravel, incluindo:
-* Desenvolvimento de endpoints para listar e buscar registros
+Este projeto demonstra minhas habilidades no desenvolvimento de API RESTful com PHP e Laravel, incluindo:
+* Desenvolvimento de endpoints para buscar registros
 * Autenticação JWT
 * Respostas em formato JSON
 * Documentação com Swagger
 * Testes de integração
 ---
-Sinta-se à vontade para explorar o código e fazer melhorias. 
+Sinta-se à vontade para explorar o código e fazer melhorias.<br>
 Se tiver alguma dúvida, entre em contato.
 
