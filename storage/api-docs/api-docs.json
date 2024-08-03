@@ -1,0 +1,391 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Vagas Emprego API",
+        "version": "1.0"
+    },
+    "paths": {
+        "/desafio-back-end-alfa-erp/api/v1/buscar-vagas": {
+            "get": {
+                "tags": [
+                    "Vagas"
+                ],
+                "summary": "Listar todas as vagas",
+                "operationId": "0bd94a98fce90c6d3e8e98973d148a4b",
+                "responses": {
+                    "200": {
+                        "description": "Lista de todas as vagas",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "array",
+                                    "items": {
+                                        "properties": {
+                                            "id": {
+                                                "type": "integer"
+                                            },
+                                            "titulo": {
+                                                "type": "string"
+                                            },
+                                            "descricao": {
+                                                "type": "string"
+                                            },
+                                            "localizacao": {
+                                                "type": "string"
+                                            },
+                                            "tipo_emprego": {
+                                                "type": "string"
+                                            },
+                                            "empresa": {
+                                                "type": "string"
+                                            },
+                                            "salario": {
+                                                "type": "number"
+                                            },
+                                            "status_vaga": {
+                                                "type": "string"
+                                            },
+                                            "numero_vagas": {
+                                                "type": "integer"
+                                            },
+                                            "data_publicacao": {
+                                                "type": "string",
+                                                "format": "date-time"
+                                            },
+                                            "data_expiracao": {
+                                                "type": "string",
+                                                "format": "date-time"
+                                            },
+                                            "data_criacao": {
+                                                "type": "string",
+                                                "format": "date-time"
+                                            },
+                                            "data_atualizacao": {
+                                                "type": "string",
+                                                "format": "date-time"
+                                            }
+                                        },
+                                        "type": "object"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "security": [
+                    {
+                        "bearerAuth": []
+                    }
+                ]
+            }
+        },
+        "/desafio-back-end-alfa-erp/api/v1/buscar-vaga/{id}": {
+            "get": {
+                "tags": [
+                    "Vagas"
+                ],
+                "summary": "Buscar vaga por ID",
+                "operationId": "90e72210e378eb85d4a2e53496cd2fb8",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Detalhes da vaga",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "id": {
+                                            "type": "integer"
+                                        },
+                                        "titulo": {
+                                            "type": "string"
+                                        },
+                                        "descricao": {
+                                            "type": "string"
+                                        },
+                                        "localizacao": {
+                                            "type": "string"
+                                        },
+                                        "tipo_emprego": {
+                                            "type": "string"
+                                        },
+                                        "empresa": {
+                                            "type": "string"
+                                        },
+                                        "salario": {
+                                            "type": "number"
+                                        },
+                                        "status_vaga": {
+                                            "type": "string"
+                                        },
+                                        "numero_vagas": {
+                                            "type": "integer"
+                                        },
+                                        "data_publicacao": {
+                                            "type": "string",
+                                            "format": "date-time"
+                                        },
+                                        "data_expiracao": {
+                                            "type": "string",
+                                            "format": "date-time"
+                                        },
+                                        "data_criacao": {
+                                            "type": "string",
+                                            "format": "date-time"
+                                        },
+                                        "data_atualizacao": {
+                                            "type": "string",
+                                            "format": "date-time"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "Vaga não encontrada"
+                    }
+                },
+                "security": [
+                    {
+                        "bearerAuth": []
+                    }
+                ]
+            }
+        },
+        "/desafio-back-end-alfa-erp/api/user/register": {
+            "post": {
+                "tags": [
+                    "Auth"
+                ],
+                "summary": "Registrar um novo usuário",
+                "operationId": "0241756fcabcf85287b95857cb6273b6",
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "required": [
+                                    "name",
+                                    "email",
+                                    "username",
+                                    "password"
+                                ],
+                                "properties": {
+                                    "name": {
+                                        "type": "string",
+                                        "example": "Your Name"
+                                    },
+                                    "email": {
+                                        "type": "string",
+                                        "format": "email",
+                                        "example": "john.doe@example.com"
+                                    },
+                                    "username": {
+                                        "type": "string",
+                                        "format": "text",
+                                        "example": "Your username"
+                                    },
+                                    "password": {
+                                        "type": "string",
+                                        "format": "password",
+                                        "example": "password"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "201": {
+                        "description": "Usuário criado com sucesso",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "message": {
+                                            "type": "string",
+                                            "example": "Usuário criado com sucesso"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Bad request",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "error": {
+                                            "type": "string",
+                                            "example": "Dados de entrada inválidos"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/desafio-back-end-alfa-erp/api/user/login": {
+            "post": {
+                "tags": [
+                    "Auth"
+                ],
+                "summary": "Login - usuário",
+                "operationId": "b46f38b9e5b997657726a5cdacec888d",
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "required": [
+                                    "email",
+                                    "password"
+                                ],
+                                "properties": {
+                                    "email": {
+                                        "type": "string",
+                                        "format": "email",
+                                        "example": "john.doe@example.com"
+                                    },
+                                    "password": {
+                                        "type": "string",
+                                        "format": "password",
+                                        "example": "password"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Usuário efetuou login com sucesso",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "access_token": {
+                                            "type": "string",
+                                            "example": "your-access-token"
+                                        },
+                                        "token_type": {
+                                            "type": "string",
+                                            "example": "bearer"
+                                        },
+                                        "expires_in": {
+                                            "type": "integer",
+                                            "example": 3600
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Não autorizado",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "error": {
+                                            "type": "string",
+                                            "example": "Não autorizado"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/desafio-back-end-alfa-erp/api/user/logout": {
+            "post": {
+                "tags": [
+                    "Auth"
+                ],
+                "summary": "Logout - usuário",
+                "operationId": "6120f3a7282792ac6fca28049f56ab72",
+                "responses": {
+                    "200": {
+                        "description": "Usuário desconectado com sucesso",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "message": {
+                                            "type": "string",
+                                            "example": "Deslogado com sucesso"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Não autorizado",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "error": {
+                                            "type": "string",
+                                            "example": "Não autorizado"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                },
+                "security": [
+                    {
+                        "bearerAuth": []
+                    }
+                ]
+            }
+        }
+    },
+    "components": {
+        "securitySchemes": {
+            "bearerAuth": {
+                "type": "http",
+                "bearerFormat": "JWT",
+                "scheme": "bearer"
+            }
+        }
+    },
+    "tags": [
+        {
+            "name": "Vagas",
+            "description": "Vagas"
+        },
+        {
+            "name": "Auth",
+            "description": "Auth"
+        }
+    ]
+}

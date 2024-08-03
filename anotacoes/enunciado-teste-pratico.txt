@@ -1,0 +1,36 @@
+Teste Situacional Back End v2 | Conhecimentos Técnicos
+
+Questão 1
+Gostaríamos de avaliar suas habilidades no desenvolvimento de API RESTful com PHP e Laravel por meio de um teste técnico.
+
+O objetivo deste teste é avaliar suas habilidades no desenvolvimento de API RESTful com PHP e Laravel, em que você será responsável por implementar endpoints de API que possam fornecer e receber informações de
+um banco de dados MySQL.
+
+Requisitos:
+Desenvolver uma API RESTful que forneça e receba informações de um banco de dados MySQL.
+
+A API deve ter pelo menos dois endpoints: 
+    um para listar informações de todos os registros da tabela 
+    e 
+    outro para buscar informações de um registro específico por meio de sua identificação única. 
+    Ambos os endpoints devem ser cobertos por um teste de integração.
+
+A API deve ser implementada usando PHP e Laravel.
+
+A API deve ser segura e usar autenticação JWT para autenticar solicitações de usuários.
+
+A API deve retornar respostas JSON.
+
+Utilizar o Swagger para documentar a API.
+
+Você terá 24 horas para concluir o teste. 
+Durante esse período, esperamos que você forneça um código bem organizado e comentado. 
+Você pode usar bibliotecas de terceiros para auxiliar no desenvolvimento, e também pode consultar a documentação do Laravel e PHP.
+
+O critério de avaliação inclui sua capacidade de desenvolver uma API RESTful com PHP e Laravel, seu conhecimento de banco de dados MySQL, sua habilidade em lidar com autenticação JWT e segurança em APIs, sua
+habilidade em retornar respostas JSON e, adicionalmente, sua habilidade em utilizar o Swagger para documentar a API. 
+O criterio de avaliação incluirá também ter um codigo limpo.
+
+Esperamos que você demonstre suas habilidades em programação e entendimento de conceitos de desenvolvimento de API RESTful. 
+Além disso, pedimos que você forneça um arquivo README que descreva como
+executar o projeto e usar a API.
