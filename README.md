@@ -57,7 +57,7 @@ Caso não esteja usando um Servidor Web como o Apache ou Nginx, execute o comand
 php artisan serve
 ```
 A aplicação estará disponível em `http://localhost:8000`.<br>
-ou `http://localhost/application-name/`, caso esteja em um servidor web apache ou nginx.
+Ou `http://localhost/application-name/`, caso esteja em um servidor web apache ou nginx.
 
 ### Endpoints da API
 A API possui os seguintes endpoints:
