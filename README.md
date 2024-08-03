@@ -49,14 +49,15 @@ mysql -u seu_usuario -p sua_senha seu_banco_de_dados < database-app/script-datab
 Para realizar esta tarefa no Windows abra o seu SGBD do MySQL e execute o script SQL mencionado acima.
 ### 6. Migrar o Banco de Dados - Tabelas do Laravel
 ```
-php artisan serve
+php artisan migrate
 ```
 ### 7. Executar o Servidor de Desenvolvimento
 Caso não esteja usando um Servidor Web como o Apache ou Nginx, execute o comando:
 ```
 php artisan serve
 ```
-A aplicação estará disponível em `http://localhost:8000`.
+A aplicação estará disponível em `http://localhost:8000`.<br>
+ou `http://localhost/application-name/`, caso esteja em um servidor web apache ou nginx.
 
 ### Endpoints da API
 A API possui os seguintes endpoints:
