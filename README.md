@@ -51,7 +51,7 @@ php artisan serve
 ```
 A aplicação estará disponível em `http://localhost:8000`.
 
-## Endpoints da API
+### Endpoints da API
 A API possui os seguintes endpoints:
 ### Listar Todos os Registros
 ```
@@ -74,32 +74,32 @@ POST /api/user/login
 POST /api/user/logout
 ```
 
-## Autenticação
+### Autenticação
 
 A API usa JWT para autenticar as solicitações dos usuários. Para acessar os endpoints protegidos, você deve incluir o token JWT no cabeçalho da solicitação.
 
-## Obter Token JWT
+### Obter Token JWT
 
 Após fazer login, você receberá um token JWT que deve ser usado nas solicitações subsequentes.
 
-## Incluir Token JWT nas Solicitações
+### Incluir Token JWT nas Solicitações
 Inclua o token JWT no cabeçalho `Authorization` das suas requisições:
 ```
 Authorization: Bearer seu_token_jwt
 ```
-## Testes de Integração
+### Testes de Integração
 O projeto inclui testes de integração para os endpoints de listar e buscar registros. Para executar os testes, use o seguinte comando:
 ```
 php artisan test
 ```
 
-## Documentação da API
+### Documentação da API
 O projeto inclui testes de integração para os endpoints de listar e buscar registros. Para executar os testes, use o seguinte comando:
 ```
 http://localhost:8000/api/documentation
 ```
 
-## Conclusão
+### Conclusão
 
 Este projeto demonstra as habilidades no desenvolvimento de API RESTful com PHP e Laravel, incluindo:
 * Desenvolvimento de endpoints para listar e buscar registros
