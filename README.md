@@ -102,9 +102,14 @@ php artisan test
 ```
 
 ### Documentação da API
-O projeto inclui testes de integração para os endpoints de listar e buscar registros. Para executar os testes, use o seguinte comando:
+A documentação da API está disponível via Swagger. Para acessar a documentação, navegue até:
+Servidor Web - Laravel
 ```
 http://localhost:8000/api/documentation
+```
+Ou - Seu Servidor Web
+```
+http://localhost/application-name/api/documentation
 ```
 
 ### Conclusão
