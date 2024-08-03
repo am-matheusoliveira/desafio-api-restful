@@ -10,7 +10,7 @@ Este projeto é uma API RESTful desenvolvida com PHP e Laravel para fornecer e r
 
 ### Instalação
 Siga os passos abaixo para configurar e executar o projeto em sua máquina local.
-1. Clonar o Repositório
+### 1. Clonar o Repositório
 ```
 git clone <URL_DO_REPOSITORIO>
 cd <NOME_DO_REPOSITORIO>
