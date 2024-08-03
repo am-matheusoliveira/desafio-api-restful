@@ -117,12 +117,8 @@ php artisan test --filter=VagasEmpregoTest
 
 ### Documentação da API
 A documentação da API está disponível via Swagger. Para acessar a documentação, navegue até:<br>
-```
-Servidor Web Laravel: http://localhost:8000/api/documentation
-```
-```
-Seu Servidor Web: http://localhost/application-name/api/documentation
-```
+Servidor Web Laravel: ```http://localhost:8000/api/documentation```
+Seu Servidor Web: ```http://localhost/application-name/api/documentation```
 
 ### Conclusão
 
