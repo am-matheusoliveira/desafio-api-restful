@@ -1,16 +1,10 @@
-# Desafio Back-End - API RESTful
+# API RESTful com PHP e Laravel
 
-Este pequeno projeto é um e um teste prático onde temos duas endpoint do tipo GET
+Este projeto é uma API RESTful desenvolvida com PHP e Laravel para fornecer e receber informações de um banco de dados MySQL. A API inclui autenticação JWT para segurança e está documentada usando o Swagger.
 
-</br>
-
-Ferramentas usadas:
-    Docker
-    PHP
-    Laravel
-    MySQL
-    JSON Web Tokens - JWT
-    Swagger - API
-    Postman - api tests
-
-## Instalação
+Ferramentas:
+* PHP 8.0
+* Composer
+* MySQL
+* Laravel 11
+    
