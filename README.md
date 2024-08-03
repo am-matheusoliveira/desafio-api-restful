@@ -74,5 +74,40 @@ POST /api/user/login
 POST /api/user/logout
 ```
 
+## Autenticação
 
+A API usa JWT para autenticar as solicitações dos usuários. Para acessar os endpoints protegidos, você deve incluir o token JWT no cabeçalho da solicitação.
+
+## Obter Token JWT
+
+Após fazer login, você receberá um token JWT que deve ser usado nas solicitações subsequentes.
+
+## Incluir Token JWT nas Solicitações
+Inclua o token JWT no cabeçalho `Authorization` das suas requisições:
+```
+Authorization: Bearer seu_token_jwt
+```
+## Testes de Integração
+O projeto inclui testes de integração para os endpoints de listar e buscar registros. Para executar os testes, use o seguinte comando:
+```
+php artisan test
+```
+
+## Documentação da API
+O projeto inclui testes de integração para os endpoints de listar e buscar registros. Para executar os testes, use o seguinte comando:
+```
+http://localhost:8000/api/documentation
+```
+
+## Conclusão
+
+Este projeto demonstra as habilidades no desenvolvimento de API RESTful com PHP e Laravel, incluindo:
+* Desenvolvimento de endpoints para listar e buscar registros
+* Autenticação JWT
+* Respostas em formato JSON
+* Documentação com Swagger
+* Testes de integração
+---
+Sinta-se à vontade para explorar o código e fazer melhorias. 
+Se tiver alguma dúvida, entre em contato.
 
