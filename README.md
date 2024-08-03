@@ -41,11 +41,15 @@ JWT_SECRET=sua_chave_secreta
 ```
 php artisan key:generate
 ```
-### 5. Migrar o Banco de Dados
+### 5. Criar o Banco de Dados - Sistema
 ```
 php artisan serve
 ```
-### 6. Executar o Servidor de Desenvolvimento
+### 6. Migrar o Banco de Dados - Tabelas do Laravel
+```
+php artisan serve
+```
+### 7. Executar o Servidor de Desenvolvimento
 ```
 php artisan serve
 ```
