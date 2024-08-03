@@ -16,7 +16,7 @@ class VagasEmpregoController extends Controller
 
     /**
      * @OA\Get(
-     *     path="/desafio-back-end-alfa-erp/api/v1/buscar-vagas",     
+     *     path="/api/v1/buscar-vagas",     
      *     summary="Listar todas as vagas",
      *     tags={"Vagas"},
      *     security={{"bearerAuth":{}}},
@@ -56,7 +56,7 @@ class VagasEmpregoController extends Controller
 
     /**
      * @OA\Get(
-     *     path="/desafio-back-end-alfa-erp/api/v1/buscar-vaga/{id}",
+     *     path="/api/v1/buscar-vaga/{id}",
      *     summary="Buscar vaga por ID",
      *     tags={"Vagas"},
      *     security={{"bearerAuth":{}}},

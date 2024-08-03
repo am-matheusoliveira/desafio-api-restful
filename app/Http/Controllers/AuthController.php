@@ -14,7 +14,7 @@ class AuthController extends Controller
 
     /**
      * @OA\Post(
-     *     path="/desafio-back-end-alfa-erp/api/user/register",
+     *     path="/api/user/register",
      *     summary="Registrar um novo usuário",
      *     tags={"Auth"},
      *     @OA\RequestBody(
@@ -84,7 +84,7 @@ class AuthController extends Controller
     
     /**
      * @OA\Post(
-     *     path="/desafio-back-end-alfa-erp/api/user/login",
+     *     path="/api/user/login",
      *     summary="Login - usuário",
      *     tags={"Auth"},
      *     @OA\RequestBody(
@@ -141,7 +141,7 @@ class AuthController extends Controller
     
     /**
      * @OA\Post(
-     *     path="/desafio-back-end-alfa-erp/api/user/logout",
+     *     path="/api/user/logout",
      *     summary="Logout - usuário",
      *     tags={"Auth"},
      *     security={{"bearerAuth":{}}},
