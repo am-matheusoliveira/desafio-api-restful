@@ -17,3 +17,11 @@ Siga os passos abaixo para configurar e executar o projeto em sua máquina local
 git clone <URL_DO_REPOSITORIO>
 cd <NOME_DO_REPOSITORIO>
 ```
+### 2. Instalar Dependências
+```
+composer install
+```
+### 3. Configurar o Arquivo `.env`
+```
+cp .env.example .env
+```
