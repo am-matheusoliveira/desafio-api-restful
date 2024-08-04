@@ -6,11 +6,6 @@ use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Http\JsonResponse;
 
-/**
- * @OA\Info(title="Vagas Emprego API", version="1.0")
- * @OA\SecurityScheme(type="http", securityScheme="bearerAuth", scheme="bearer", bearerFormat="JWT")
- */
-
 class VagasEmpregoController extends Controller
 {
 

@@ -21,7 +21,7 @@
 						},
 						"method": "GET",
 						"header": [],
-						"url": "http://localhost/desafio-back-end-alfa-erp/api/v1/buscar-vagas"
+						"url": "http://localhost/desafio-back-end-api/api/v1/buscar-vagas"
 					},
 					"response": []
 				},
@@ -36,7 +36,7 @@
 						},
 						"method": "GET",
 						"header": [],
-						"url": "http://localhost/desafio-back-end-alfa-erp/api/v1/buscar-vaga/1"
+						"url": "http://localhost/desafio-back-end-api/api/v1/buscar-vaga/1"
 					},
 					"response": []
 				}
@@ -60,7 +60,7 @@
 								}
 							}
 						},
-						"url": "http://localhost/desafio-back-end-alfa-erp/api/user/register"
+						"url": "http://localhost/desafio-back-end-api/api/user/register"
 					},
 					"response": []
 				},
@@ -78,7 +78,7 @@
 								}
 							}
 						},
-						"url": "http://localhost/desafio-back-end-alfa-erp/api/user/login"
+						"url": "http://localhost/desafio-back-end-api/api/user/login"
 					},
 					"response": []
 				},
@@ -93,7 +93,7 @@
 						},
 						"method": "POST",
 						"header": [],
-						"url": "http://localhost/desafio-back-end-alfa-erp/api/user/logout"
+						"url": "http://localhost/desafio-back-end-api/api/user/logout"
 					},
 					"response": []
 				}

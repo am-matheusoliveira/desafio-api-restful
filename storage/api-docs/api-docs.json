@@ -4,14 +4,19 @@
         "title": "Vagas Emprego API",
         "version": "1.0"
     },
+    "servers": [
+        {
+            "url": "http://localhost/desafio-back-end-api"
+        }
+    ],
     "paths": {
-        "/desafio-back-end-alfa-erp/api/v1/buscar-vagas": {
+        "/api/v1/buscar-vagas": {
             "get": {
                 "tags": [
                     "Vagas"
                 ],
                 "summary": "Listar todas as vagas",
-                "operationId": "0bd94a98fce90c6d3e8e98973d148a4b",
+                "operationId": "ffaa2a49913bf58e82c9dc1177cc05c8",
                 "responses": {
                     "200": {
                         "description": "Lista de todas as vagas",
@@ -79,13 +84,13 @@
                 ]
             }
         },
-        "/desafio-back-end-alfa-erp/api/v1/buscar-vaga/{id}": {
+        "/api/v1/buscar-vaga/{id}": {
             "get": {
                 "tags": [
                     "Vagas"
                 ],
                 "summary": "Buscar vaga por ID",
-                "operationId": "90e72210e378eb85d4a2e53496cd2fb8",
+                "operationId": "2364cdedcb8dd86e8fb885ffcf05b126",
                 "parameters": [
                     {
                         "name": "id",
@@ -163,13 +168,13 @@
                 ]
             }
         },
-        "/desafio-back-end-alfa-erp/api/user/register": {
+        "/api/user/register": {
             "post": {
                 "tags": [
                     "Auth"
                 ],
                 "summary": "Registrar um novo usuário",
-                "operationId": "0241756fcabcf85287b95857cb6273b6",
+                "operationId": "c5d4be2455cfdca65ec102b1804ada91",
                 "requestBody": {
                     "required": true,
                     "content": {
@@ -243,13 +248,13 @@
                 }
             }
         },
-        "/desafio-back-end-alfa-erp/api/user/login": {
+        "/api/user/login": {
             "post": {
                 "tags": [
                     "Auth"
                 ],
                 "summary": "Login - usuário",
-                "operationId": "b46f38b9e5b997657726a5cdacec888d",
+                "operationId": "fa481c4ebcab70051c9df8d0624a47e8",
                 "requestBody": {
                     "required": true,
                     "content": {
@@ -320,13 +325,13 @@
                 }
             }
         },
-        "/desafio-back-end-alfa-erp/api/user/logout": {
+        "/api/user/logout": {
             "post": {
                 "tags": [
                     "Auth"
                 ],
                 "summary": "Logout - usuário",
-                "operationId": "6120f3a7282792ac6fca28049f56ab72",
+                "operationId": "1450bb66c6720716bd057bef3d23211a",
                 "responses": {
                     "200": {
                         "description": "Usuário desconectado com sucesso",

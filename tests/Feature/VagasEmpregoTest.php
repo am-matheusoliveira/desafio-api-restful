@@ -3,12 +3,14 @@
 namespace Tests\Feature;
 
 use Illuminate\Foundation\Testing\DatabaseTransactions;
+use Illuminate\Foundation\Testing\WithoutMiddleware;
 use Tests\TestCase;
 use Illuminate\Support\Facades\DB;
 
 class VagasEmpregoTest extends TestCase
 {
     use DatabaseTransactions;
+    use WithoutMiddleware;
 
     /**
      * Testa a listagem de todas as vagas.
