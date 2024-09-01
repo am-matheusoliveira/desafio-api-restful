@@ -60,12 +60,12 @@ O motivo de alterar este arquivo é devido ao fato de a aplicação ter tido o s
 Com isso, a URL não terá o nome **public** aparente para o usuário, proporcionando uma aparência mais profissional e também evitando erros de execução ao iniciar a aplicação com o servidor interno do Laravel.
 
 Execute os comandos abaixo de acordo com o seu Sistema Operacional.<br />
-Windows - Copiar o conteúdo de um arquivo para outro e, em seguida, excluí-los.:
+Windows - Copiar o conteúdo de um arquivo para outro e, em seguida, excluí-los.
 ```
 php anotacoes\alterar_conteudo.php vendor\laravel\framework\src\Illuminate\Foundation\resources\server.php anotacoes\new-server.php
 del anotacoes\new-server.php, anotacoes\alterar_conteudo.php
 ```
-Linux - Copiar o conteúdo de um arquivo para outro e, em seguida, excluí-los.:
+Linux - Copiar o conteúdo de um arquivo para outro e, em seguida, excluí-los.
 ```
 php anotacoes\alterar_conteudo.php vendor\laravel\framework\src\Illuminate\Foundation\resources\server.php anotacoes\new-server.php
 rm anotacoes\new-server.php, anotacoes\alterar_conteudo.php
