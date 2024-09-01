@@ -60,9 +60,7 @@ INSERT INTO vagas_emprego (titulo, descricao, localizacao, tipo_emprego, empresa
 INSERT INTO vagas_emprego (titulo, descricao, localizacao, tipo_emprego, empresa, salario, status_vaga, numero_vagas, data_publicacao, data_expiracao, data_criacao, data_atualizacao) VALUES ('Gerente de Recursos Humanos', 'Gerenciamento de equipe de RH e processos relacionados.', 'Salvador, BA', 'CLT', 'ITManagement', 10000.00, 'Aberta', 2, '2024-09-26', '2024-11-01', NOW(), NOW());
 
 -- SELECT - ROTAS
-SELECT * FROM vagas_emprego;
+-- SELECT * FROM vagas_emprego;
 
 -- BUSCAR REGISTRO POR ID
-SELECT * FROM vagas_emprego
-WHERE 
-    id = 1;
+-- SELECT * FROM vagas_emprego WHERE id = 1;
