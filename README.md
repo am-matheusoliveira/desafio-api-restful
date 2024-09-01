@@ -63,7 +63,7 @@ Execute os comandos abaixo para resolver este problema.<br />
 Copiar o conteúdo de um arquivo para outro e, em seguida, excluí-los.:
 ```
 php anotacoes\alterar_conteudo.php vendor\laravel\framework\src\Illuminate\Foundation\resources\server.php anotacoes\new-server.php
-del anotacoes\new-server.php anotacoes\alterar_conteudo.php
+del anotacoes\new-server.php, anotacoes\alterar_conteudo.php
 ```
 
 ### 9. Executar o Servidor de Desenvolvimento
