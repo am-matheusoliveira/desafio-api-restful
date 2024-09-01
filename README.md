@@ -68,7 +68,7 @@ del anotacoes\new-server.php, anotacoes\alterar_conteudo.php
 Linux - Copiar o conteúdo de um arquivo para outro e, em seguida, excluí-los.
 ```
 php anotacoes\alterar_conteudo.php vendor\laravel\framework\src\Illuminate\Foundation\resources\server.php anotacoes\new-server.php
-rm anotacoes\new-server.php, anotacoes\alterar_conteudo.php
+rm anotacoes\new-server.php anotacoes\alterar_conteudo.php
 ```
 
 ### 9. Executar o Servidor de Desenvolvimento
