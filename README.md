@@ -62,8 +62,8 @@ Com isso, a URL não terá o nome **public** aparente para o usuário, proporcio
 Execute os comandos abaixo para resolver este problema.<br />
 Copiar o conteúdo de um arquivo para outro e, em seguida, excluí-los.:
 ```
-php alterar_conteudo.php vendor\laravel\framework\src\Illuminate\Foundation\resources\server.php anotacoes\new-server.php
-del anotacoes\new-server.php alterar_conteudo.php
+php anotacoes\alterar_conteudo.php vendor\laravel\framework\src\Illuminate\Foundation\resources\server.php anotacoes\new-server.php
+del anotacoes\new-server.php anotacoes\alterar_conteudo.php
 ```
 
 ### 9. Executar o Servidor de Desenvolvimento
