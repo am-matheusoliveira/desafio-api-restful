@@ -26,7 +26,7 @@ Crie um arquivo `.env` a partir do `.env.example` e configure as variáveis de a
 ```
 cp .env.example .env
 ```
-Edite o arquivo `.env` para incluir suas configurações de banco de dados e JWT, use este exemplo:
+Edite o arquivo `.env` para incluir suas configurações de banco de dados, use este exemplo:
 ```
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
