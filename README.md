@@ -22,18 +22,18 @@ cd desafio-back-end-api
 composer install
 ```
 ### 3. Configurar o Arquivo `.env`
-Renomeie o arquivo `.env.example` para `.env` e configure as variáveis de ambiente, especialmente as relacionadas ao banco de dados e JWT.
+Crie um arquivo `.env` a partir do `.env.example` e configure as variáveis de ambiente.</br>
 ```
 cp .env.example .env
 ```
-Edite o arquivo `.env` para incluir suas configurações de banco de dados e JWT. Aqui está um exemplo:
+Edite o arquivo `.env` para incluir suas configurações de banco de dados e JWT, use este exemplo:
 ```
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
-DB_DATABASE=seu_banco_de_dados
-DB_USERNAME=seu_usuario
-DB_PASSWORD=sua_senha
+DB_DATABASE=seu_banco_de_dados - para este aplicativo o nome é: database_vagas
+DB_USERNAME=seu_usuario - para este aplicativo o usuário é: root
+DB_PASSWORD=sua_senha - para este aplicativo a senha é: 
 
 JWT_SECRET=sua_chave_secreta
 ```
