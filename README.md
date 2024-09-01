@@ -55,7 +55,7 @@ Para realizar esta tarefa no Windows abra o seu SGBD do MySQL e execute o script
 php artisan migrate
 ```
 
-### 8. Mudanças no arquivo `server.php` execute os passos a seguir para alterar este arquivo
+### 8. Mudanças no arquivo `server.php`, execute os passos a seguir para alterar este arquivo
 O motivo de alterar este arquivo é devido ao fato de a aplicação ter tido o seu arquivo `index.php` da pasta `/public` movido para a raiz da aplicação.<br>
 Com isso, a URL não terá o nome **public** aparente para o usuário, proporcionando uma aparência mais profissional e também evitando erros de execução ao iniciar a aplicação com o servidor interno do Laravel.
 ```
