@@ -130,7 +130,7 @@ Para obter o Token JWT navegue ate:<br>
 Servidor Web Laravel: `http://localhost:8000/api/documentation`<br>
 Seu Servidor Web: `http://localhost/desafio-back-end-api/api/documentation`<br>
 
-Excute a API: `/api/user/login`, passando um Json com Email e Senha:<br>
+Execute o endpoint: `/api/user/login`, passando um Json com Email e Senha:<br>
 ```
 {
   "email": "username@email.com",
