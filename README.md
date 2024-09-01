@@ -62,6 +62,21 @@ php artisan serve
 A aplicação estará disponível em `http://localhost:8000`.<br>
 Ou `http://localhost/application-name/`, caso esteja em um servidor web apache ou nginx.
 
+### Testes de Integração
+O projeto inclui testes de integração para os endpoints de `api/v1/buscar-vagas` e `api/v1/buscar-vaga/{id}`. Para executar os testes, use os seguintes comandos:
+```
+php artisan test --filter=VagasEmpregoTest::test_list_all_vagas
+```
+```
+php artisan test --filter=VagasEmpregoTest::test_show_vaga_by_id
+```
+```
+php artisan test --filter=VagasEmpregoTest::test_vaga_not_exists
+```
+```
+php artisan test --filter=VagasEmpregoTest
+```
+
 ### Endpoints da API
 A API possui os seguintes endpoints:
 ### Listar Todos os Registros
@@ -85,12 +100,15 @@ POST /api/user/login
 POST /api/user/logout
 ```
 
-### Autenticação
+### Documentação da API
+A documentação da API está disponível via Swagger. Para acessar a documentação, navegue até:<br>
+Servidor Web Laravel: `http://localhost:8000/api/documentation`<br>
+Seu Servidor Web: `http://localhost/application-name/api/documentation`
 
+### Autenticação
 A API usa JWT para autenticar as solicitações dos usuários. Para acessar os endpoints protegidos, você deve incluir o token JWT no cabeçalho da solicitação.
 
 ### Obter Token JWT
-
 Para obter o Token JWT navegue ate:<br>
 Servidor Web Laravel: `http://localhost:8000/api/documentation`<br>
 Seu Servidor Web: `http://localhost/application-name/api/documentation`<br>
@@ -107,28 +125,7 @@ Após fazer login, você receberá um token JWT que deve ser usado nas solicita�
 ### Incluir Token JWT nas Solicitações
 Clique no ícone de cadeado (Authorize) no canto superior direito do Swagger UI e inclua o token JWT.
 
-### Testes de Integração
-O projeto inclui testes de integração para os endpoints de `api/v1/buscar-vagas` e `api/v1/buscar-vaga/{id}`. Para executar os testes, use os seguintes comandos:
-```
-php artisan test --filter=VagasEmpregoTest::test_list_all_vagas
-```
-```
-php artisan test --filter=VagasEmpregoTest::test_show_vaga_by_id
-```
-```
-php artisan test --filter=VagasEmpregoTest::test_vaga_not_exists
-```
-```
-php artisan test --filter=VagasEmpregoTest
-```
-
-### Documentação da API
-A documentação da API está disponível via Swagger. Para acessar a documentação, navegue até:<br>
-Servidor Web Laravel: `http://localhost:8000/api/documentation`<br>
-Seu Servidor Web: `http://localhost/application-name/api/documentation`
-
 ### Conclusão
-
 Este projeto demonstra minhas habilidades no desenvolvimento de API RESTful com PHP e Laravel, incluindo:
 * Desenvolvimento de endpoints para buscar registros
 * Autenticação JWT
