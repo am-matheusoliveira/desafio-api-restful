@@ -59,16 +59,11 @@ php artisan migrate
 O motivo de alterar este arquivo é devido ao fato de a aplicação ter tido o seu arquivo `index.php` da pasta `/public` movido para a raiz da aplicação.<br />
 Com isso, a URL não terá o nome **public** aparente para o usuário, proporcionando uma aparência mais profissional e também evitando erros de execução ao iniciar a aplicação com o servidor interno do Laravel.
 
-Execute os comandos abaixo de acordo com o seu sistema operacional.<br />
-Windows - Copiar o conteúdo de um arquivo para outro e, em seguida, excluí-lo.:
+Execute os comandos abaixo para resolver este problema.<br />
+Copiar o conteúdo de um arquivo para outro e, em seguida, excluí-los.:
 ```
-type anotacoes\new-server.php > vendor\laravel\framework\src\Illuminate\Foundation\resources\server.php
-del anotacoes\new-server.php
-```
-Linux - Copiar o conteúdo de um arquivo para outro e, em seguida, excluí-lo.:
-```
-cat anotacoes\new-server.php > vendor\laravel\framework\src\Illuminate\Foundation\resources\server.php
-rm anotacoes\new-server.php
+php alterar_conteudo.php vendor\laravel\framework\src\Illuminate\Foundation\resources\server.php anotacoes\new-server.php
+del anotacoes\new-server.php alterar_conteudo.php
 ```
 
 ### 9. Executar o Servidor de Desenvolvimento
