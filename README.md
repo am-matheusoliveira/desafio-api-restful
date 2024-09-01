@@ -34,8 +34,6 @@ DB_PORT=3306
 DB_DATABASE=seu_banco_de_dados - para este aplicativo o nome é: database_vagas
 DB_USERNAME=seu_usuario - para este aplicativo o usuário é: root
 DB_PASSWORD=sua_senha - para este aplicativo a senha é: 
-
-JWT_SECRET=sua_chave_secreta
 ```
 ### 4. Gerar a Chave da Aplicação
 ```
