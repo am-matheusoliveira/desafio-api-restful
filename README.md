@@ -151,27 +151,25 @@ Este projeto demonstra minhas habilidades no desenvolvimento de API RESTful com 
 * Testes de integração
 ---
 
-...
-
 ### Referências
 
 - **PHP**  
-  Para mais informações sobre o PHP, acesse a [documentação oficial do PHP](https://www.php.net/docs.php).
+  [documentação oficial do PHP](https://www.php.net/docs.php).
 
 - **Composer**  
-  Para aprender mais sobre o Composer e como gerenciar dependências no PHP, visite a [documentação oficial do Composer](https://getcomposer.org/doc/).
+  [documentação oficial do Composer](https://getcomposer.org/doc/).
 
 - **MySQL**  
-  Para detalhes sobre o MySQL, banco de dados relacional utilizado no projeto, veja a [documentação oficial do MySQL](https://dev.mysql.com/doc/).
+  [documentação oficial do MySQL](https://dev.mysql.com/doc/).
 
 - **Laravel**  
-  O Laravel é um framework PHP moderno para desenvolvimento de aplicações web. A documentação completa pode ser encontrada na [documentação oficial do Laravel](https://laravel.com/docs).
+  [documentação oficial do Laravel](https://laravel.com/docs).
 
 - **Token JWT (JSON Web Token)**  
-  Para entender melhor o funcionamento do JWT, que é utilizado para autenticação na API, confira a [documentação oficial do JWT](https://jwt.io/introduction/).
+  [documentação oficial do JWT](https://jwt.io/introduction/).
 
 - **Swagger JS**  
-  O Swagger é utilizado para documentar a API. Para mais informações, visite a [documentação oficial do Swagger](https://swagger.io/docs/).
+  [documentação oficial do Swagger](https://swagger.io/docs/).
 
 ---
 Sinta-se à vontade para explorar o código e fazer melhorias.<br>
