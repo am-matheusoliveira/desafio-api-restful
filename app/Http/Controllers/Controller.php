@@ -11,6 +11,7 @@ use Illuminate\Routing\Controller as BaseController;
  * @OA\Info(title="Vagas Emprego API", version="1.0")
  * @OA\SecurityScheme(type="http", securityScheme="bearerAuth", scheme="bearer", bearerFormat="JWT")
  * @OA\Server(url="http://localhost/desafio-back-end-api")
+ * @OA\Server(url="http://127.0.0.1:8000")
  */
 
 class Controller extends BaseController
