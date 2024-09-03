@@ -14,8 +14,8 @@ Este projeto é uma API RESTful desenvolvida com PHP e Laravel para fornecer e r
 Siga os passos abaixo para configurar e executar o projeto em sua máquina local.
 ### 1. Clonar o Repositório
 ```
-git clone https://github.com/am-matheusoliveira/desafio-back-end-api.git
-cd desafio-back-end-api
+git clone https://github.com/am-matheusoliveira/desafio-api-restful.git
+cd desafio-api-restful
 ```
 ### 2. Instalar Dependências
 ```
@@ -77,7 +77,7 @@ Caso não esteja usando um Servidor Web como o Apache ou Nginx, execute o comand
 php artisan serve
 ```
 A aplicação estará disponível em `http://localhost:8000`.<br>
-Ou `http://localhost/desafio-back-end-api/`, caso esteja em um servidor web apache ou nginx.
+Ou `http://localhost/desafio-api-restful/`, caso esteja em um servidor web apache ou nginx.
 
 ### Testes de Integração
 O projeto inclui testes de integração para os endpoints de `api/v1/buscar-vagas` e `api/v1/buscar-vaga/{id}`. Para executar os testes, use os seguintes comandos:
@@ -120,7 +120,7 @@ POST /api/user/logout
 ### Documentação da API
 A documentação da API está disponível via Swagger. Para acessar a documentação, navegue até:<br>
 Servidor Web Laravel: `http://localhost:8000/api/documentation`<br>
-Seu Servidor Web: `http://localhost/desafio-back-end-api/api/documentation`
+Seu Servidor Web: `http://localhost/desafio-api-restful/api/documentation`
 
 ### Autenticação
 A API usa JWT para autenticar as solicitações dos usuários. Para acessar os endpoints protegidos, você deve incluir o token JWT no cabeçalho da solicitação.
@@ -128,7 +128,7 @@ A API usa JWT para autenticar as solicitações dos usuários. Para acessar os e
 ### Obter Token JWT
 Para obter o Token JWT navegue ate:<br>
 Servidor Web Laravel: `http://localhost:8000/api/documentation`<br>
-Seu Servidor Web: `http://localhost/desafio-back-end-api/api/documentation`<br>
+Seu Servidor Web: `http://localhost/desafio-api-restful/api/documentation`<br>
 
 Execute o endpoint: `/api/user/login`, passando um Json com Email e Senha:<br>
 ```
