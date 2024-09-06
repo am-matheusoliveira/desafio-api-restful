@@ -8,7 +8,7 @@ Este projeto é uma API RESTful desenvolvida com PHP e Laravel para fornecer e r
 * MySQL
 * Laravel 11
 * Token JWT
-* Swagger JS
+* Swagger UI
   
 ### Instalação
 Siga os passos abaixo para configurar e executar o projeto em sua máquina local.
