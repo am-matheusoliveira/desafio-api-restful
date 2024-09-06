@@ -6,7 +6,7 @@
     },
     "servers": [
         {
-            "url": "http://localhost/desafio-back-end-api"
+            "url": "http://localhost/desafio-api-restful"
         },
         {
             "url": "http://127.0.0.1:8000"

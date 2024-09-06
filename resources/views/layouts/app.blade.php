@@ -8,14 +8,10 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>{{ config('app.name', 'Laravel') }}</title>
-
+    
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
-    
-    
-    <!-- CSS PADRÃO DA APLICAÇÃO -->
-    <link href="{{ asset('public/build/assets/app-D-sv12UV.css') }}" rel="stylesheet">
 
     <!-- Scripts -->
     {{-- @vite(['resources/sass/app.scss', 'resources/css/app.css', 'resources/js/app.js']) --}}
@@ -80,9 +76,6 @@
         <main class="py-4">
             @yield('content')
         </main>
-        
-        <!-- JavaScript PADRÃO DA APLICAÇÃO -->
-        <script src="{{ asset('public/build/assets/app-DkTTh6p2.js') }}"></script>
                 
         @hasSection ('footer')
             @yield('footer')

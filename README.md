@@ -14,8 +14,8 @@ Este projeto é uma API RESTful desenvolvida com PHP e Laravel para fornecer e r
 Siga os passos abaixo para configurar e executar o projeto em sua máquina local.
 ### 1. Clonar o Repositório
 ```
-git clone https://github.com/am-matheusoliveira/desafio-back-end-api.git
-cd desafio-back-end-api
+git clone https://github.com/am-matheusoliveira/desafio-api-restful.git
+cd desafio-api-restful
 ```
 ### 2. Instalar Dependências
 ```
@@ -55,29 +55,13 @@ Para realizar esta tarefa no Windows abra o seu SGBD do MySQL e execute o script
 php artisan migrate
 ```
 
-### 8. Mudanças no arquivo `server.php`, execute os passos a seguir para alterar este arquivo
-O motivo de alterar este arquivo é devido ao fato de a aplicação ter tido o seu arquivo `index.php` da pasta `/public` movido para a raiz da aplicação.<br />
-Com isso, a URL não terá o nome **public** aparente para o usuário, proporcionando uma aparência mais profissional e também evitando erros de execução ao iniciar a aplicação com o servidor interno do Laravel.
-
-Execute os comandos abaixo de acordo com o seu Sistema Operacional.<br />
-Windows - Copiar o conteúdo de um arquivo para outro e, em seguida, excluí-los.
-```
-php anotacoes\alterar_conteudo.php vendor\laravel\framework\src\Illuminate\Foundation\resources\server.php anotacoes\new-server.php
-del anotacoes\new-server.php, anotacoes\alterar_conteudo.php
-```
-Linux - Copiar o conteúdo de um arquivo para outro e, em seguida, excluí-los.
-```
-php anotacoes\alterar_conteudo.php vendor\laravel\framework\src\Illuminate\Foundation\resources\server.php anotacoes\new-server.php
-rm anotacoes\new-server.php anotacoes\alterar_conteudo.php
-```
-
-### 9. Executar o Servidor de Desenvolvimento
+### 8. Executar o Servidor de Desenvolvimento
 Caso não esteja usando um Servidor Web como o Apache ou Nginx, execute o comando:
 ```
 php artisan serve
 ```
 A aplicação estará disponível em `http://localhost:8000`.<br>
-Ou `http://localhost/desafio-back-end-api/`, caso esteja em um servidor web apache ou nginx.
+Ou `http://localhost/desafio-api-restful/`, caso esteja em um servidor web apache ou nginx.
 
 ### Testes de Integração
 O projeto inclui testes de integração para os endpoints de `api/v1/buscar-vagas` e `api/v1/buscar-vaga/{id}`. Para executar os testes, use os seguintes comandos:
@@ -120,7 +104,7 @@ POST /api/user/logout
 ### Documentação da API
 A documentação da API está disponível via Swagger. Para acessar a documentação, navegue até:<br>
 Servidor Web Laravel: `http://localhost:8000/api/documentation`<br>
-Seu Servidor Web: `http://localhost/desafio-back-end-api/api/documentation`
+Seu Servidor Web: `http://localhost/desafio-api-restful/api/documentation`
 
 ### Autenticação
 A API usa JWT para autenticar as solicitações dos usuários. Para acessar os endpoints protegidos, você deve incluir o token JWT no cabeçalho da solicitação.
@@ -128,7 +112,7 @@ A API usa JWT para autenticar as solicitações dos usuários. Para acessar os e
 ### Obter Token JWT
 Para obter o Token JWT navegue ate:<br>
 Servidor Web Laravel: `http://localhost:8000/api/documentation`<br>
-Seu Servidor Web: `http://localhost/desafio-back-end-api/api/documentation`<br>
+Seu Servidor Web: `http://localhost/desafio-api-restful/api/documentation`<br>
 
 Execute o endpoint: `/api/user/login`, passando um Json com Email e Senha:<br>
 ```

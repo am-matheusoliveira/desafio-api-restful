@@ -17,10 +17,6 @@ return Application::configure(basePath: dirname(__DIR__))
             'guest' => \App\Http\Middleware\RedirectIfAuthenticated::class,            
             'auth' => \App\Http\Middleware\Authenticate::class,
         ]);
-
-        $middleware->validateCsrfTokens(except: [
-            
-        ]);
     })
     ->withExceptions(function (Exceptions $exceptions) {
         //
