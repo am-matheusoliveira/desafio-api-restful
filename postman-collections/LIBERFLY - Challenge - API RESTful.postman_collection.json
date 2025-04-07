@@ -1,7 +1,7 @@
 {
 	"info": {
-		"_postman_id": "6cd04e87-52df-44ea-848d-d2f6cb425d4c",
-		"name": "Desafio Back-End - API RESTful",
+		"_postman_id": "ac07bfe3-4a88-4e8b-8b44-4a476d45f0e7",
+		"name": "LIBERFLY - Challenge - API RESTful",
 		"description": "Nessa collection teremos todas as rotas do sistema",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "36193510"
@@ -26,13 +26,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost/desafio-back-end-api/api/v1/buscar-vagas",
+							"raw": "http://localhost/desafio-api-restful/api/v1/buscar-vagas",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"path": [
-								"desafio-back-end-api",
+								"desafio-api-restful",
 								"api",
 								"v1",
 								"buscar-vagas"
@@ -57,13 +57,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost/desafio-back-end-api/api/v1/buscar-vaga/1",
+							"raw": "http://localhost/desafio-api-restful/api/v1/buscar-vaga/1",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"path": [
-								"desafio-back-end-api",
+								"desafio-api-restful",
 								"api",
 								"v1",
 								"buscar-vaga",
@@ -94,13 +94,13 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost/desafio-back-end-api/api/user/register",
+							"raw": "http://localhost/desafio-api-restful/api/user/register",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"path": [
-								"desafio-back-end-api",
+								"desafio-api-restful",
 								"api",
 								"user",
 								"register"
@@ -124,13 +124,13 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost/desafio-back-end-api/api/user/login",
+							"raw": "http://localhost/desafio-api-restful/api/user/login",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"path": [
-								"desafio-back-end-api",
+								"desafio-api-restful",
 								"api",
 								"user",
 								"login"
@@ -155,13 +155,13 @@
 						"method": "POST",
 						"header": [],
 						"url": {
-							"raw": "http://localhost/desafio-back-end-api/api/user/logout",
+							"raw": "http://localhost/desafio-api-restful/api/user/logout",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"path": [
-								"desafio-back-end-api",
+								"desafio-api-restful",
 								"api",
 								"user",
 								"logout"
